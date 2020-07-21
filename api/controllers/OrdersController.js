@@ -13,6 +13,10 @@ const { FeedbackContext } = require('twilio/lib/rest/api/v2010/account/call/feed
 
 module.exports = {
   
+    getPizza:async function(req,res){
+    var pizza=await Pizza.find();
+    res.json({data:pizza})
+    },
     placeOrder:function(req,res){
         var orderId=""+Math.floor(Date.now() / 1000)+Math.floor(Math.random() * 101);
         Orders.create({orderId:orderId,userName:req.body.userName,userMobile:req.body.userMobile,userAddress:req.body.userAddress,items:req.body.items,orderStatus:'OrderPlaced',totalAmount:req.body.totalAmount}).fetch().exec(function(err,data){
