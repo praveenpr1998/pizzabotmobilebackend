@@ -35,8 +35,9 @@ module.exports.datastores = {
   
     mongodb: {
       adapter: 'sails-mongo',
-      url: 'mongodb://localhost:27017/pizzabot'
-      }
+      url: 'mongodb://Praveen:praveen@cluster0-shard-00-00.ljpap.mongodb.net:27017,cluster0-shard-00-01.ljpap.mongodb.net:27017,cluster0-shard-00-02.ljpap.mongodb.net:27017/pizzadbbot?ssl=true&replicaSet=atlas-9kdlrd-shard-0&authSource=admin&retryWrites=true&w=majority',
+      ssl:true  
+    }
     /***************************************************************************
     *                                                                          *
     * Want to use a different database during development?                     *

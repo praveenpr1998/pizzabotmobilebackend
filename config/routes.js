@@ -20,6 +20,10 @@ module.exports.routes = {
   ***************************************************************************/
 
   '/': { view: 'pages/homepage' },
+  'POST /orders/feedback':'OrdersController.feedback',
+  'POST /orders/trackOrder':'OrdersController.trackOrder',
+  'POST /orders/placeOrder':'OrdersController.placeOrder',
+  'POST /orders/query':'OrdersController.query'
 
 
   /***************************************************************************
