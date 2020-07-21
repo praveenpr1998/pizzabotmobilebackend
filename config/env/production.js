@@ -49,7 +49,7 @@ module.exports = {
     default: {
       mongodb: {
         adapter: 'sails-mongo',
-      url: 'mongodb://Praveen:praveen@cluster0-shard-00-00.ljpap.mongodb.net:27017,cluster0-shard-00-01.ljpap.mongodb.net:27017,cluster0-shard-00-02.ljpap.mongodb.net:27017/pizzadbbot?ssl=true&replicaSet=atlas-9kdlrd-shard-0&authSource=admin&retryWrites=true&w=majority',
+      url: 'mongodb://Praveen:praveen@cluster0-shard-00-00.ljpap.mongodb.net:27017,cluster0-shard-00-01.ljpap.mongodb.net:27017,cluster0-shard-00-02.ljpap.mongodb.net:27017/pizzabot?ssl=true&replicaSet=atlas-9kdlrd-shard-0&authSource=admin&retryWrites=true&w=majority',
       ssl:true  
         }
       // adapter: 'sails-mysql',
