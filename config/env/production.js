@@ -47,6 +47,10 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     default: {
+      mongodb: {
+        adapter: 'sails-mongo',
+        url: 'mongodb://localhost:27017/pizzabot'
+        }
       // adapter: 'sails-mysql',
       // url: 'mysql://user:password@host:port/database',
       //--------------------------------------------------------------------------
@@ -148,9 +152,9 @@ module.exports = {
     *                                                                          *
     ***************************************************************************/
     cors: {
-      // allowOrigins: [
-      //   'https://example.com',
-      // ]
+      allowOrigins: [
+        'https://example.com',
+      ]
     },
 
   },
